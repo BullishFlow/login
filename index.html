@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Net-RJ - Provedor de Internet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #00aaff;
+            --accent-color: #ff6600;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .pricing-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .highlighted {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .highlighted .feature-icon {
+            color: white;
+        }
+        
+        .contact-info {
+            background-color: var(--light-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .cidade-bg {
+            background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-lightning-charge-fill me-2"></i>
+                Speed Net-RJ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vantagens">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Internet de Alta Velocidade no Rio de Janeiro</h1>
+            <p class="lead">Há mais de 20 anos conectando o Rio com a melhor internet</p>
+            <a href="#planos" class="btn btn-primary btn-lg mt-3">Conhecer Planos</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="vantagens" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Por que escolher a Speed Net-RJ?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-trophy feature-icon"></i>
+                    <h3>Experiência</h3>
+                    <p>Mais de 20 anos oferecendo o melhor serviço de internet</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-speedometer2 feature-icon"></i>
+                    <h3>Alta Velocidade</h3>
+                    <p>Navegue, trabalhe e assista conteúdos sem travamentos</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-shield-check feature-icon"></i>
+                    <h3>Conectividade Segura</h3>
+                    <p>Proteção avançada para seus dados e dispositivos</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-headset feature-icon"></i>
+                    <h3>Suporte Local</h3>
+                    <p>Equipe técnica especializada no Rio de Janeiro</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-wifi feature-icon"></i>
+                    <h3>Conexão Estável</h3>
+                    <p>Sinal forte e estável em toda a região</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-cash-coin feature-icon"></i>
+                    <h3>Melhor Custo-Benefício</h3>
+                    <p>Planos acessíveis com a melhor qualidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Planos de Internet</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card text-center h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Plano Básico</h5>
+                            <h3 class="card-title pricing-card-title">100 Mbps</h3>
+                            <p class="card-text">Ideal para navegação e redes sociais</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="bi bi-check text-success me-2"></i> Download: 100 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Upload: 50 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Wi-Fi incluso</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Instalação gratuita</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#contato" class="btn btn-outline-primary">Contratar Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card text-center h-100 highlighted">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle px-3">Popular</span>
+                            <h5 class="card-title">Plano Família</h5>
+                            <h3 class="card-title pricing-card-title">300 Mbps</h3>
+                            <p class="card-text">Perfeito para streaming e home office</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="bi bi-check text-light me-2"></i> Download: 300 Mbps</li>
+                                <li><i class="bi bi-check text-light me-2"></i> Upload: 150 Mbps</li>
+                                <li><i class="bi bi-check text-light me-2"></i> Wi-Fi dual band</li>
+                                <li><i class="bi bi-check text-light me-2"></i> Suporte prioritário</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#contato" class="btn btn-light">Contratar Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card text-center h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Plano Gamer</h5>
+                            <h3 class="card-title pricing-card-title">600 Mbps</h3>
+                            <p class="card-text">Experiência máxima para gamers</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="bi bi-check text-success me-2"></i> Download: 600 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Upload: 300 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Latência ultrabaixa</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Router gaming inclusivo</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#contato" class="btn btn-outline-primary">Contratar Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Section -->
+    <section class="cidade-bg py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Atendemos o Rio de Janeiro com Excelência</h2>
+            <p class="lead mb-4">Especialistas em conectar Jardim Guanabara e toda a região</p>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-3">
+                    <i class="bi bi-buildings fs-1 mb-2"></i>
+                    <h3>Bairro</h3>
+                    <p>Jardim Guanabara</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <i class="bi bi-geo-alt fs-1 mb-2"></i>
+                    <h3>Cidade</h3>
+                    <p>Rio de Janeiro</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <i class="bi bi-telephone fs-1 mb-2"></i>
+                    <h3>Telefone</h3>
+                    <p>(21) 3366-5177</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <i class="bi bi-clock fs-1 mb-2"></i>
+                    <h3>Atendimento</h3>
+                    <p>24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Sobre a Speed Net-RJ</h2>
+                    <p>Há mais de 22 anos conectando lares e empresas no Rio de Janeiro com internet de alta qualidade. Nossa missão é proporcionar a melhor experiência de conexão para nossos clientes.</p>
+                    
+                    <div class="mt-4">
+                        <h4>Informações Cadastrais</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Razão Social
+                                <span class="text-end">Speed Net-Rj Provedor de Internet LTDA</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                CNPJ
+                                <span>05.448.409/0001-99</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Data de Abertura
+                                <span>16/12/2002 (22 anos, 8 meses e 5 dias)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Situação Cadastral
+                                <span>Ativa desde 03/01/2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3" class="img-fluid rounded" alt="Rio de Janeiro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-5 contact-info">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações de Contato</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Estrada Do Galeão 00529 Sal 301, Jardim Guanabara, Rio de Janeiro - RJ, 21931-383</li>
+                                <li class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i> (21) 3366-5177</li>
+                                <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i> contato@speednetrj.com.br</li>
+                                <li class="mb-2"><i class="bi bi-clock-fill me-2 text-primary"></i> Atendimento: Segunda a Sexta, 8h às 18h</li>
+                            </ul>
+                            <div class="mt-4">
+                                <h5>Nos acompanhe nas redes sociais</h5>
+                                <div class="d-flex gap-3 mt-3">
+                                    <a href="#" class="text-dark"><i class="bi bi-facebook fs-4"></i></a>
+                                    <a href="#" class="text-dark"><i class="bi bi-instagram fs-4"></i></a>
+                                    <a href="#" class="text-dark"><i class="bi bi-whatsapp fs-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicite uma Visita</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nome completo</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5><i class="bi bi-lightning-charge-fill me-2"></i> Speed Net-RJ</h5>
+                    <p>Provedor de Internet LTDA</p>
+                    <p>CNPJ: 05.448.409/0001-99</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Speed Net-RJ Provedor de Internet. Todos os direitos reservados.</p>
+                    <p>Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para o Rio de Janeiro</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
